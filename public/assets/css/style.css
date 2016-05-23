@@ -1,0 +1,144 @@
+.errors{
+	border: 3px solid red;
+	padding: 5px;
+	text-decoration: underline;
+	font-weight: bolder;
+	background-color: #F8BFBF;
+	margin-top: 5px;
+}
+#bonjour{
+	color: #fff;
+	font-weight: bolder;
+	font-size: 20px;
+	margin-left: 50%;
+}
+
+#inscription{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+}
+.formulaire{
+	width: 60%;
+	border: 1px solid #000;
+	padding: 10px;
+}
+#inForm{
+	display: flex;
+	margin-top: 8px;
+}
+#btnInscrire{
+	height: 35px;
+}
+form input, form select{
+	color: #000;
+}
+
+/*-----------------------------home*/
+
+#formSelect{
+	width: 100%;
+	padding: 1%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	border: 1px solid #ccc;
+}
+.divFormSelect{
+	display: flex;
+	flex-direction: column;
+}
+#btnSelectSportId{
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+}
+#btnSelectSportId>button{
+	height: 25px;
+	padding: 2% 5% 5% 5%;
+}
+.masthead{
+	border: 1px solid #ccc;
+}
+
+.lesSports{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+}
+.divLesSports{
+	display: flex;
+	justify-content: space-around;
+}
+.divLesSports figure{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	align-content: center;
+	border: 1px solid #ccc;
+	padding: 2% 0 0 0;
+}
+.divLesSports legend {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	align-content: center;
+	
+	
+}
+/*-----------------------------adefinir*/
+
+#artcont2, #figcont2{
+	display: flex;
+
+}
+#cont2{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	width: 100%;
+	justify-content: space-around;
+	padding: 3%;
+
+}
+#contCont2{
+	display: flex;
+	height: 250px;
+	flex-grow: 1;
+	flex-direction: column;
+	justify-content: space-between;
+}
+#butcont2{
+	display: flex;
+	justify-content: center;
+}
+#butcont2 button{
+	margin-right: 15px;
+	text-decoration: none;
+}
+#figcont2{
+	flex-direction: column;
+	align-items: center;
+}
+#cont3{
+	display: flex;
+	justify-content: space-around;
+}
+
+#butMessage2 {
+	display: none;
+}
+/*----------------------------------oubli*/
+
+#formOubli{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+#divFormOubli{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}

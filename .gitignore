@@ -1,0 +1,6 @@
+/vendor/
+/app/config.php
+/phpDocumentor.phar
+
+#php-tmp
+.php-tmp
