@@ -12,6 +12,6 @@ $w_routes = array(
 
 	//Adriana
 	['GET|POST', '/sports', 'Sport#sport_list', 'sport_list'],
-	['GET|POST', '/sports/[:sport]', 'Sport#sport_detail', 'sport_detail'],
+	['GET|POST', '/sports/[a:sport]', 'Sport#sport_detail', 'sport_detail'],
 
 	);

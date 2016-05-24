@@ -9,7 +9,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand page-scroll" href="#page-top">On sport</a>
+                <a class="navbar-brand page-scroll" href="/">On sport</a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
@@ -24,6 +24,7 @@
                     <li>
                         <a class="page-scroll" href="/sports">Les Sports</a>
                     </li>
+                    
                     <li>
                         <a class="page-scroll" href="/users">Les Sportifs</a>
                     </li>

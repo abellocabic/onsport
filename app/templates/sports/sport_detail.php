@@ -1,4 +1,4 @@
-<?php $this->layout('layout', ['title' => 'Forum']) ?>
+<?php $this->layout('layout', ['title' => $sinfo[0]["nom"]]) ?>
 
 <?php $this->start('css') ?>
 
@@ -20,8 +20,34 @@ $this->stop('nav');
 
 <?php $this->start('main_content') ?>
 
-		
-<h1>This is sport detail</h1>
+	<div class="container">
+	    <div class="row">
+	        <div class="col-lg-12 text-center">
+	            <h2 class="section-heading"><?=  $sinfo[0]["nom"] ;?></h2>
+	            <h3 class="section-subheading text-muted">Voici nos joueurs</h3>
+	        </div>
+	    </div>
+    </div>
+
+	<div class="container center-flex">
+	    <? foreach ($sportifs as $key => $value) : ?>
+		    	<div class="col-lg-8">
+			    	<div class="row sport_list">
+			    		<div class="col-lg-6">
+							<a href="#"><h2 class=""><?= $value['username'] ?> </h2></a>
+							<p> <?= $value['prenom']." ".$value['nom']?> </p>
+							<p> <?= $value['ville']." ".$value['cp'] ?> </p>
+						</div>
+						<div class="col-lg-5 center-flex">
+							<p> <?= $value['disponibilite'] ?></p>
+							<a href="" class="btn btn-primary">Contacter</a>
+						</div>
+			      	</div>
+		      	</div>
+	    <? endforeach ; ?>
+    </div>
+
+
 
 
 <?php $this->stop('main_content') ?>

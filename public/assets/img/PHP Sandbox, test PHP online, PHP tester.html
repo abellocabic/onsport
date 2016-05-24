@@ -1,0 +1,366 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0038)http://sandbox.onlinephpfunctions.com/ -->
+<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> 
+         
+        <title>PHP Sandbox, test PHP online, PHP tester</title> 
+
+        <link rel="icon" type="image/png" href="http://onlinephpfunctions.com/media/images/layout/favicon.png?t=04102012"> 
+        <meta name="description" content="PHP Sandbox. Run, execute and test PHP code from your browser. Versions: 7.0.5, 7.0.4, 7.0.3, 7.0.2, 7.0.1, 5.6.20, 5.6.19, 5.6.18, 5.6.17, 5.6.2, 5.5.34, 5.5.33, 5.5.32, 5.5.31, 5.5.18, 5.5.5, 5.5.0.a6, 5.5.0.a.5, 5.5.0.a.2, 5.4.34, 5.4.21, 5.4.13, 5.4.12, 5.4.11, 5.4.10, 5.4.9, 5.4.8, 5.4.7, 5.4.6, 5.4.5, 5.4.4, 5.4.3, 5.4.2, 5.4.1, 5.4.0, 5.3.29, 5.3.27, 5.3.23, 5.3.22, 5.3.21, 5.3.20, 5.3.19, 5.3.18, 5.3.17, 5.3.16, 5.3.15, 5.3.14, 5.3.13, 5.3.12, 5.3.11, 5.3.10, 5.3.2, 5.3.1, 5.3.0, 5.2.17, 5.2.16, 5.1.6, 5.1.5, 5.0.5, 5.0.4, 4.4.9"> 
+        <meta name="keywords" content="PHP Sandbox, test php online execute run code, tester, script"> 
+        <link rel="stylesheet" href="./PHP Sandbox, test PHP online, PHP tester_files/global.css" type="text/css" media="all"> 
+
+               <script src="./PHP Sandbox, test PHP online, PHP tester_files/cb=gapi.loaded_1" async=""></script><script src="./PHP Sandbox, test PHP online, PHP tester_files/cb=gapi.loaded_0" async=""></script><script type="text/javascript" async="" src="./PHP Sandbox, test PHP online, PHP tester_files/plusone.js" gapi_processed="true"></script><script type="text/javascript" async="" src="./PHP Sandbox, test PHP online, PHP tester_files/ga.js"></script><script type="text/javascript">var BASEHREF = 'http://onlinephpfunctions.com'</script><style type="text/css"></style>
+        <script type="text/javascript" src="./PHP Sandbox, test PHP online, PHP tester_files/jquery-1.8.2.min.js"></script>
+        <script type="text/javascript" src="./PHP Sandbox, test PHP online, PHP tester_files/jquery.tools.js"></script>
+        <script type="text/javascript" src="./PHP Sandbox, test PHP online, PHP tester_files/jquery.keynav.js"></script>
+        <script type="text/javascript" src="./PHP Sandbox, test PHP online, PHP tester_files/ace.js"></script><style id="ace_editor.css">.ace_editor {position: relative;overflow: hidden;font: 12px/normal 'Monaco', 'Menlo', 'Ubuntu Mono', 'Consolas', 'source-code-pro', monospace;direction: ltr;}.ace_scroller {position: absolute;overflow: hidden;top: 0;bottom: 0;background-color: inherit;-ms-user-select: none;-moz-user-select: none;-webkit-user-select: none;user-select: none;cursor: text;}.ace_content {position: absolute;-moz-box-sizing: border-box;-webkit-box-sizing: border-box;box-sizing: border-box;min-width: 100%;}.ace_dragging .ace_scroller:before{position: absolute;top: 0;left: 0;right: 0;bottom: 0;content: '';background: rgba(250, 250, 250, 0.01);z-index: 1000;}.ace_dragging.ace_dark .ace_scroller:before{background: rgba(0, 0, 0, 0.01);}.ace_selecting, .ace_selecting * {cursor: text !important;}.ace_gutter {position: absolute;overflow : hidden;width: auto;top: 0;bottom: 0;left: 0;cursor: default;z-index: 4;-ms-user-select: none;-moz-user-select: none;-webkit-user-select: none;user-select: none;}.ace_gutter-active-line {position: absolute;left: 0;right: 0;}.ace_scroller.ace_scroll-left {box-shadow: 17px 0 16px -16px rgba(0, 0, 0, 0.4) inset;}.ace_gutter-cell {padding-left: 19px;padding-right: 6px;background-repeat: no-repeat;}.ace_gutter-cell.ace_error {background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAABOFBMVEX/////////QRswFAb/Ui4wFAYwFAYwFAaWGAfDRymzOSH/PxswFAb/SiUwFAYwFAbUPRvjQiDllog5HhHdRybsTi3/Tyv9Tir+Syj/UC3////XurebMBIwFAb/RSHbPx/gUzfdwL3kzMivKBAwFAbbvbnhPx66NhowFAYwFAaZJg8wFAaxKBDZurf/RB6mMxb/SCMwFAYwFAbxQB3+RB4wFAb/Qhy4Oh+4QifbNRcwFAYwFAYwFAb/QRzdNhgwFAYwFAbav7v/Uy7oaE68MBK5LxLewr/r2NXewLswFAaxJw4wFAbkPRy2PyYwFAaxKhLm1tMwFAazPiQwFAaUGAb/QBrfOx3bvrv/VC/maE4wFAbRPBq6MRO8Qynew8Dp2tjfwb0wFAbx6eju5+by6uns4uH9/f36+vr/GkHjAAAAYnRSTlMAGt+64rnWu/bo8eAA4InH3+DwoN7j4eLi4xP99Nfg4+b+/u9B/eDs1MD1mO7+4PHg2MXa347g7vDizMLN4eG+Pv7i5evs/v79yu7S3/DV7/498Yv24eH+4ufQ3Ozu/v7+y13sRqwAAADLSURBVHjaZc/XDsFgGIBhtDrshlitmk2IrbHFqL2pvXf/+78DPokj7+Fz9qpU/9UXJIlhmPaTaQ6QPaz0mm+5gwkgovcV6GZzd5JtCQwgsxoHOvJO15kleRLAnMgHFIESUEPmawB9ngmelTtipwwfASilxOLyiV5UVUyVAfbG0cCPHig+GBkzAENHS0AstVF6bacZIOzgLmxsHbt2OecNgJC83JERmePUYq8ARGkJx6XtFsdddBQgZE2nPR6CICZhawjA4Fb/chv+399kfR+MMMDGOQAAAABJRU5ErkJggg==");background-repeat: no-repeat;background-position: 2px center;}.ace_gutter-cell.ace_warning {background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAAmVBMVEX///8AAAD///8AAAAAAABPSzb/5sAAAAB/blH/73z/ulkAAAAAAAD85pkAAAAAAAACAgP/vGz/rkDerGbGrV7/pkQICAf////e0IsAAAD/oED/qTvhrnUAAAD/yHD/njcAAADuv2r/nz//oTj/p064oGf/zHAAAAA9Nir/tFIAAAD/tlTiuWf/tkIAAACynXEAAAAAAAAtIRW7zBpBAAAAM3RSTlMAABR1m7RXO8Ln31Z36zT+neXe5OzooRDfn+TZ4p3h2hTf4t3k3ucyrN1K5+Xaks52Sfs9CXgrAAAAjklEQVR42o3PbQ+CIBQFYEwboPhSYgoYunIqqLn6/z8uYdH8Vmdnu9vz4WwXgN/xTPRD2+sgOcZjsge/whXZgUaYYvT8QnuJaUrjrHUQreGczuEafQCO/SJTufTbroWsPgsllVhq3wJEk2jUSzX3CUEDJC84707djRc5MTAQxoLgupWRwW6UB5fS++NV8AbOZgnsC7BpEAAAAABJRU5ErkJggg==");background-position: 2px center;}.ace_gutter-cell.ace_info {background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAAAAAA6mKC9AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAAJ0Uk5TAAB2k804AAAAPklEQVQY02NgIB68QuO3tiLznjAwpKTgNyDbMegwisCHZUETUZV0ZqOquBpXj2rtnpSJT1AEnnRmL2OgGgAAIKkRQap2htgAAAAASUVORK5CYII=");background-position: 2px center;}.ace_dark .ace_gutter-cell.ace_info {background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQBAMAAADt3eJSAAAAJFBMVEUAAAChoaGAgIAqKiq+vr6tra1ZWVmUlJSbm5s8PDxubm56enrdgzg3AAAAAXRSTlMAQObYZgAAAClJREFUeNpjYMAPdsMYHegyJZFQBlsUlMFVCWUYKkAZMxZAGdxlDMQBAG+TBP4B6RyJAAAAAElFTkSuQmCC");}.ace_scrollbar {position: absolute;right: 0;bottom: 0;z-index: 6;}.ace_scrollbar-inner {position: absolute;cursor: text;left: 0;top: 0;}.ace_scrollbar-v{overflow-x: hidden;overflow-y: scroll;top: 0;}.ace_scrollbar-h {overflow-x: scroll;overflow-y: hidden;left: 0;}.ace_print-margin {position: absolute;height: 100%;}.ace_text-input {position: absolute;z-index: 0;width: 0.5em;height: 1em;opacity: 0;background: transparent;-moz-appearance: none;appearance: none;border: none;resize: none;outline: none;overflow: hidden;font: inherit;padding: 0 1px;margin: 0 -1px;text-indent: -1em;-ms-user-select: text;-moz-user-select: text;-webkit-user-select: text;user-select: text;white-space: pre!important;}.ace_text-input.ace_composition {background: inherit;color: inherit;z-index: 1000;opacity: 1;text-indent: 0;}.ace_layer {z-index: 1;position: absolute;overflow: hidden;word-wrap: normal;white-space: pre;height: 100%;width: 100%;-moz-box-sizing: border-box;-webkit-box-sizing: border-box;box-sizing: border-box;pointer-events: none;}.ace_gutter-layer {position: relative;width: auto;text-align: right;pointer-events: auto;}.ace_text-layer {font: inherit !important;}.ace_cjk {display: inline-block;text-align: center;}.ace_cursor-layer {z-index: 4;}.ace_cursor {z-index: 4;position: absolute;-moz-box-sizing: border-box;-webkit-box-sizing: border-box;box-sizing: border-box;border-left: 2px solid;transform: translatez(0);}.ace_slim-cursors .ace_cursor {border-left-width: 1px;}.ace_overwrite-cursors .ace_cursor {border-left-width: 0;border-bottom: 1px solid;}.ace_hidden-cursors .ace_cursor {opacity: 0.2;}.ace_smooth-blinking .ace_cursor {-webkit-transition: opacity 0.18s;transition: opacity 0.18s;}.ace_editor.ace_multiselect .ace_cursor {border-left-width: 1px;}.ace_marker-layer .ace_step, .ace_marker-layer .ace_stack {position: absolute;z-index: 3;}.ace_marker-layer .ace_selection {position: absolute;z-index: 5;}.ace_marker-layer .ace_bracket {position: absolute;z-index: 6;}.ace_marker-layer .ace_active-line {position: absolute;z-index: 2;}.ace_marker-layer .ace_selected-word {position: absolute;z-index: 4;-moz-box-sizing: border-box;-webkit-box-sizing: border-box;box-sizing: border-box;}.ace_line .ace_fold {-moz-box-sizing: border-box;-webkit-box-sizing: border-box;box-sizing: border-box;display: inline-block;height: 11px;margin-top: -2px;vertical-align: middle;background-image:url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABEAAAAJCAYAAADU6McMAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAJpJREFUeNpi/P//PwOlgAXGYGRklAVSokD8GmjwY1wasKljQpYACtpCFeADcHVQfQyMQAwzwAZI3wJKvCLkfKBaMSClBlR7BOQikCFGQEErIH0VqkabiGCAqwUadAzZJRxQr/0gwiXIal8zQQPnNVTgJ1TdawL0T5gBIP1MUJNhBv2HKoQHHjqNrA4WO4zY0glyNKLT2KIfIMAAQsdgGiXvgnYAAAAASUVORK5CYII="),url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAA3CAYAAADNNiA5AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAACJJREFUeNpi+P//fxgTAwPDBxDxD078RSX+YeEyDFMCIMAAI3INmXiwf2YAAAAASUVORK5CYII=");background-repeat: no-repeat, repeat-x;background-position: center center, top left;color: transparent;border: 1px solid black;border-radius: 2px;cursor: pointer;pointer-events: auto;}.ace_dark .ace_fold {}.ace_fold:hover{background-image:url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABEAAAAJCAYAAADU6McMAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAJpJREFUeNpi/P//PwOlgAXGYGRklAVSokD8GmjwY1wasKljQpYACtpCFeADcHVQfQyMQAwzwAZI3wJKvCLkfKBaMSClBlR7BOQikCFGQEErIH0VqkabiGCAqwUadAzZJRxQr/0gwiXIal8zQQPnNVTgJ1TdawL0T5gBIP1MUJNhBv2HKoQHHjqNrA4WO4zY0glyNKLT2KIfIMAAQsdgGiXvgnYAAAAASUVORK5CYII="),url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAA3CAYAAADNNiA5AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAACBJREFUeNpi+P//fz4TAwPDZxDxD5X4i5fLMEwJgAADAEPVDbjNw87ZAAAAAElFTkSuQmCC");}.ace_tooltip {background-color: #FFF;background-image: -webkit-linear-gradient(top, transparent, rgba(0, 0, 0, 0.1));background-image: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.1));border: 1px solid gray;border-radius: 1px;box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);color: black;max-width: 100%;padding: 3px 4px;position: fixed;z-index: 999999;-moz-box-sizing: border-box;-webkit-box-sizing: border-box;box-sizing: border-box;cursor: default;white-space: pre;word-wrap: break-word;line-height: normal;font-style: normal;font-weight: normal;letter-spacing: normal;pointer-events: none;}.ace_folding-enabled > .ace_gutter-cell {padding-right: 13px;}.ace_fold-widget {-moz-box-sizing: border-box;-webkit-box-sizing: border-box;box-sizing: border-box;margin: 0 -12px 0 1px;display: none;width: 11px;vertical-align: top;background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAANElEQVR42mWKsQ0AMAzC8ixLlrzQjzmBiEjp0A6WwBCSPgKAXoLkqSot7nN3yMwR7pZ32NzpKkVoDBUxKAAAAABJRU5ErkJggg==");background-repeat: no-repeat;background-position: center;border-radius: 3px;border: 1px solid transparent;cursor: pointer;}.ace_folding-enabled .ace_fold-widget {display: inline-block;   }.ace_fold-widget.ace_end {background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAANElEQVR42m3HwQkAMAhD0YzsRchFKI7sAikeWkrxwScEB0nh5e7KTPWimZki4tYfVbX+MNl4pyZXejUO1QAAAABJRU5ErkJggg==");}.ace_fold-widget.ace_closed {background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAAGCAYAAAAG5SQMAAAAOUlEQVR42jXKwQkAMAgDwKwqKD4EwQ26sSOkVWjgIIHAzPiCgaqiqnJHZnKICBERHN194O5b9vbLuAVRL+l0YWnZAAAAAElFTkSuQmCCXA==");}.ace_fold-widget:hover {border: 1px solid rgba(0, 0, 0, 0.3);background-color: rgba(255, 255, 255, 0.2);box-shadow: 0 1px 1px rgba(255, 255, 255, 0.7);}.ace_fold-widget:active {border: 1px solid rgba(0, 0, 0, 0.4);background-color: rgba(0, 0, 0, 0.05);box-shadow: 0 1px 1px rgba(255, 255, 255, 0.8);}.ace_dark .ace_fold-widget {background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAAHklEQVQIW2P4//8/AzoGEQ7oGCaLLAhWiSwB146BAQCSTPYocqT0AAAAAElFTkSuQmCC");}.ace_dark .ace_fold-widget.ace_end {background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAAH0lEQVQIW2P4//8/AxQ7wNjIAjDMgC4AxjCVKBirIAAF0kz2rlhxpAAAAABJRU5ErkJggg==");}.ace_dark .ace_fold-widget.ace_closed {background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAAFCAYAAACAcVaiAAAAHElEQVQIW2P4//+/AxAzgDADlOOAznHAKgPWAwARji8UIDTfQQAAAABJRU5ErkJggg==");}.ace_dark .ace_fold-widget:hover {box-shadow: 0 1px 1px rgba(255, 255, 255, 0.2);background-color: rgba(255, 255, 255, 0.1);}.ace_dark .ace_fold-widget:active {box-shadow: 0 1px 1px rgba(255, 255, 255, 0.2);}.ace_fold-widget.ace_invalid {background-color: #FFB4B4;border-color: #DE5555;}.ace_fade-fold-widgets .ace_fold-widget {-webkit-transition: opacity 0.4s ease 0.05s;transition: opacity 0.4s ease 0.05s;opacity: 0;}.ace_fade-fold-widgets:hover .ace_fold-widget {-webkit-transition: opacity 0.05s ease 0.05s;transition: opacity 0.05s ease 0.05s;opacity:1;}.ace_underline {text-decoration: underline;}.ace_bold {font-weight: bold;}.ace_nobold .ace_bold {font-weight: normal;}.ace_italic {font-style: italic;}.ace_error-marker {background-color: rgba(255, 0, 0,0.2);position: absolute;z-index: 9;}.ace_highlight-marker {background-color: rgba(255, 255, 0,0.2);position: absolute;z-index: 8;}.ace_br1 {border-top-left-radius    : 3px;}.ace_br2 {border-top-right-radius   : 3px;}.ace_br3 {border-top-left-radius    : 3px; border-top-right-radius:    3px;}.ace_br4 {border-bottom-right-radius: 3px;}.ace_br5 {border-top-left-radius    : 3px; border-bottom-right-radius: 3px;}.ace_br6 {border-top-right-radius   : 3px; border-bottom-right-radius: 3px;}.ace_br7 {border-top-left-radius    : 3px; border-top-right-radius:    3px; border-bottom-right-radius: 3px;}.ace_br8 {border-bottom-left-radius : 3px;}.ace_br9 {border-top-left-radius    : 3px; border-bottom-left-radius:  3px;}.ace_br10{border-top-right-radius   : 3px; border-bottom-left-radius:  3px;}.ace_br11{border-top-left-radius    : 3px; border-top-right-radius:    3px; border-bottom-left-radius:  3px;}.ace_br12{border-bottom-right-radius: 3px; border-bottom-left-radius:  3px;}.ace_br13{border-top-left-radius    : 3px; border-bottom-right-radius: 3px; border-bottom-left-radius:  3px;}.ace_br14{border-top-right-radius   : 3px; border-bottom-right-radius: 3px; border-bottom-left-radius:  3px;}.ace_br15{border-top-left-radius    : 3px; border-top-right-radius:    3px; border-bottom-right-radius: 3px; border-bottom-left-radius: 3px;}
+/*# sourceURL=ace/css/ace_editor.css */</style><style id="ace-tm">.ace-tm .ace_gutter {background: #f0f0f0;color: #333;}.ace-tm .ace_print-margin {width: 1px;background: #e8e8e8;}.ace-tm .ace_fold {background-color: #6B72E6;}.ace-tm {background-color: #FFFFFF;color: black;}.ace-tm .ace_cursor {color: black;}.ace-tm .ace_invisible {color: rgb(191, 191, 191);}.ace-tm .ace_storage,.ace-tm .ace_keyword {color: blue;}.ace-tm .ace_constant {color: rgb(197, 6, 11);}.ace-tm .ace_constant.ace_buildin {color: rgb(88, 72, 246);}.ace-tm .ace_constant.ace_language {color: rgb(88, 92, 246);}.ace-tm .ace_constant.ace_library {color: rgb(6, 150, 14);}.ace-tm .ace_invalid {background-color: rgba(255, 0, 0, 0.1);color: red;}.ace-tm .ace_support.ace_function {color: rgb(60, 76, 114);}.ace-tm .ace_support.ace_constant {color: rgb(6, 150, 14);}.ace-tm .ace_support.ace_type,.ace-tm .ace_support.ace_class {color: rgb(109, 121, 222);}.ace-tm .ace_keyword.ace_operator {color: rgb(104, 118, 135);}.ace-tm .ace_string {color: rgb(3, 106, 7);}.ace-tm .ace_comment {color: rgb(76, 136, 107);}.ace-tm .ace_comment.ace_doc {color: rgb(0, 102, 255);}.ace-tm .ace_comment.ace_doc.ace_tag {color: rgb(128, 159, 191);}.ace-tm .ace_constant.ace_numeric {color: rgb(0, 0, 205);}.ace-tm .ace_variable {color: rgb(49, 132, 149);}.ace-tm .ace_xml-pe {color: rgb(104, 104, 91);}.ace-tm .ace_entity.ace_name.ace_function {color: #0000A2;}.ace-tm .ace_heading {color: rgb(12, 7, 255);}.ace-tm .ace_list {color:rgb(185, 6, 144);}.ace-tm .ace_meta.ace_tag {color:rgb(0, 22, 142);}.ace-tm .ace_string.ace_regex {color: rgb(255, 0, 0)}.ace-tm .ace_marker-layer .ace_selection {background: rgb(181, 213, 255);}.ace-tm.ace_multiselect .ace_selection.ace_start {box-shadow: 0 0 3px 0px white;}.ace-tm .ace_marker-layer .ace_step {background: rgb(252, 255, 0);}.ace-tm .ace_marker-layer .ace_stack {background: rgb(164, 229, 101);}.ace-tm .ace_marker-layer .ace_bracket {margin: -1px 0 0 -1px;border: 1px solid rgb(192, 192, 192);}.ace-tm .ace_marker-layer .ace_active-line {background: rgba(0, 0, 0, 0.07);}.ace-tm .ace_gutter-active-line {background-color : #dcdcdc;}.ace-tm .ace_marker-layer .ace_selected-word {background: rgb(250, 250, 255);border: 1px solid rgb(200, 200, 250);}.ace-tm .ace_indent-guide {background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAACCAYAAACZgbYnAAAAE0lEQVQImWP4////f4bLly//BwAmVgd1/w11/gAAAABJRU5ErkJggg==") right repeat-y;}
+/*# sourceURL=ace/css/ace-tm */</style><style>    .error_widget_wrapper {        background: inherit;        color: inherit;        border:none    }    .error_widget {        border-top: solid 2px;        border-bottom: solid 2px;        margin: 5px 0;        padding: 10px 40px;        white-space: pre-wrap;    }    .error_widget.ace_error, .error_widget_arrow.ace_error{        border-color: #ff5a5a    }    .error_widget.ace_warning, .error_widget_arrow.ace_warning{        border-color: #F1D817    }    .error_widget.ace_info, .error_widget_arrow.ace_info{        border-color: #5a5a5a    }    .error_widget.ace_ok, .error_widget_arrow.ace_ok{        border-color: #5aaa5a    }    .error_widget_arrow {        position: absolute;        border: solid 5px;        border-top-color: transparent!important;        border-right-color: transparent!important;        border-left-color: transparent!important;        top: -5px;    }</style>
+        <script type="text/javascript" src="./PHP Sandbox, test PHP online, PHP tester_files/garlic.js"></script>
+        <script type="text/javascript" src="./PHP Sandbox, test PHP online, PHP tester_files/global.js"></script>
+        
+    <script src="./PHP Sandbox, test PHP online, PHP tester_files/embed.js" data-timestamp="1464082994852"></script><script src="./PHP Sandbox, test PHP online, PHP tester_files/theme-chrome.js"></script><script src="./PHP Sandbox, test PHP online, PHP tester_files/mode-php.js"></script><style id="ace-chrome">.ace-chrome .ace_gutter {background: #ebebeb;color: #333;overflow : hidden;}.ace-chrome .ace_print-margin {width: 1px;background: #e8e8e8;}.ace-chrome {background-color: #FFFFFF;color: black;}.ace-chrome .ace_cursor {color: black;}.ace-chrome .ace_invisible {color: rgb(191, 191, 191);}.ace-chrome .ace_constant.ace_buildin {color: rgb(88, 72, 246);}.ace-chrome .ace_constant.ace_language {color: rgb(88, 92, 246);}.ace-chrome .ace_constant.ace_library {color: rgb(6, 150, 14);}.ace-chrome .ace_invalid {background-color: rgb(153, 0, 0);color: white;}.ace-chrome .ace_fold {}.ace-chrome .ace_support.ace_function {color: rgb(60, 76, 114);}.ace-chrome .ace_support.ace_constant {color: rgb(6, 150, 14);}.ace-chrome .ace_support.ace_type,.ace-chrome .ace_support.ace_class.ace-chrome .ace_support.ace_other {color: rgb(109, 121, 222);}.ace-chrome .ace_variable.ace_parameter {font-style:italic;color:#FD971F;}.ace-chrome .ace_keyword.ace_operator {color: rgb(104, 118, 135);}.ace-chrome .ace_comment {color: #236e24;}.ace-chrome .ace_comment.ace_doc {color: #236e24;}.ace-chrome .ace_comment.ace_doc.ace_tag {color: #236e24;}.ace-chrome .ace_constant.ace_numeric {color: rgb(0, 0, 205);}.ace-chrome .ace_variable {color: rgb(49, 132, 149);}.ace-chrome .ace_xml-pe {color: rgb(104, 104, 91);}.ace-chrome .ace_entity.ace_name.ace_function {color: #0000A2;}.ace-chrome .ace_heading {color: rgb(12, 7, 255);}.ace-chrome .ace_list {color:rgb(185, 6, 144);}.ace-chrome .ace_marker-layer .ace_selection {background: rgb(181, 213, 255);}.ace-chrome .ace_marker-layer .ace_step {background: rgb(252, 255, 0);}.ace-chrome .ace_marker-layer .ace_stack {background: rgb(164, 229, 101);}.ace-chrome .ace_marker-layer .ace_bracket {margin: -1px 0 0 -1px;border: 1px solid rgb(192, 192, 192);}.ace-chrome .ace_marker-layer .ace_active-line {background: rgba(0, 0, 0, 0.07);}.ace-chrome .ace_gutter-active-line {background-color : #dcdcdc;}.ace-chrome .ace_marker-layer .ace_selected-word {background: rgb(250, 250, 255);border: 1px solid rgb(200, 200, 250);}.ace-chrome .ace_storage,.ace-chrome .ace_keyword,.ace-chrome .ace_meta.ace_tag {color: rgb(147, 15, 128);}.ace-chrome .ace_string.ace_regex {color: rgb(255, 0, 0)}.ace-chrome .ace_string {color: #1A1AA6;}.ace-chrome .ace_entity.ace_other.ace_attribute-name {color: #994409;}.ace-chrome .ace_indent-guide {background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAACCAYAAACZgbYnAAAAE0lEQVQImWP4////f4bLly//BwAmVgd1/w11/gAAAABJRU5ErkJggg==") right repeat-y;}
+/*# sourceURL=ace/css/ace-chrome */</style><script type="text/javascript" src="chrome-extension://aadgmnobpdmgmigaicncghmmoeflnamj/ng-inspector.js"></script></head> 
+
+    <body onload="if (self != top) top.location.href = self.location.href" cz-shortcut-listen="true"> 
+<div id="topBar">&nbsp;
+            </div>
+
+        <div id="wrapper_opf">
+         
+            
+
+        <div id="headerTop">
+
+            <div id="slogan">
+                <a href="http://onlinephpfunctions.com/"><img src="./PHP Sandbox, test PHP online, PHP tester_files/logo.png" alt="Online PHP Function(s){ #Test PHP functions online!; }"></a>
+            </div>
+
+            
+                 
+    <br>
+    
+    <div id="shareButtons">
+        <ul><li>
+        <div id="___plusone_0" style="text-indent: 0px; margin: 0px; padding: 0px; border-style: none; float: none; line-height: normal; font-size: 1px; vertical-align: baseline; display: inline-block; width: 90px; height: 20px; background: transparent;"><iframe frameborder="0" hspace="0" marginheight="0" marginwidth="0" scrolling="no" style="position: static; top: 0px; width: 90px; margin: 0px; border-style: none; left: 0px; visibility: visible; height: 20px;" tabindex="0" vspace="0" width="100%" id="I0_1464082995010" name="I0_1464082995010" src="./PHP Sandbox, test PHP online, PHP tester_files/fastbutton.html" data-gapiattached="true" title="+1"></iframe></div>
+            </li><li>
+       
+             
+        
+        <iframe id="twitterTweet" frameborder="0" scrolling="no" src="./PHP Sandbox, test PHP online, PHP tester_files/tweet_button.html" style="width:130px; height:20px;" allowtransparency="true"></iframe>
+        
+            </li>
+        </ul>
+    </div>
+            
+        </div>
+       
+            <div id="contentWrapperTop">&nbsp;
+                <div id="menuTop">
+                    <ul>
+                                                <li><a href="http://onlinephpfunctions.com/">Home</a></li>
+                        <li class="selected"><a href="http://sandbox.onlinephpfunctions.com/">Sandbox</a></li>
+                        <li>PHP Functions <img src="./PHP Sandbox, test PHP online, PHP tester_files/down.png" alt="down"><ul>
+                                <li><a href="http://onlinephpfunctions.com/categories/Arrays">Arrays</a></li><li><a href="http://onlinephpfunctions.com/categories/Custom+functions">Custom functions</a></li><li><a href="http://onlinephpfunctions.com/categories/Cryptography%2C+Hashing+">Cryptography, Hashing </a></li><li><a href="http://onlinephpfunctions.com/categories/Date+and+Time">Date and Time</a></li><li><a href="http://onlinephpfunctions.com/categories/Math">Math</a></li><li><a href="http://onlinephpfunctions.com/categories/Step+by+step+tutorials">Step by step tutorials</a></li><li><a href="http://onlinephpfunctions.com/categories/Other+functions">Other functions</a></li><li><a href="http://onlinephpfunctions.com/categories/Output+buffering">Output buffering</a></li><li><a href="http://onlinephpfunctions.com/categories/Regular+Expressions">Regular Expressions</a></li><li><a href="http://onlinephpfunctions.com/categories/String+Manipulation">String Manipulation</a></li><li><a href="http://onlinephpfunctions.com/categories/String+Compare+%2F+Search">String Compare / Search</a></li><li><a href="http://onlinephpfunctions.com/categories/Type+checking+%2F+changing">Type checking / changing</a></li></ul></li>
+                        <li><a href="http://onlinephpfunctions.com/categories/custom_functions">Custom functions</a></li>
+                        <li><a href="http://onlinephpfunctions.com/categories/Step_by_Step_Tutorials">Tutorials</a></li>
+                        <li><a href="http://onlinephpfunctions.com/benchmarks">PHP Benchmarks</a></li>
+                                                <li><a href="http://onlinephpfunctions.com/about">About</a></li>
+                        <li><a href="https://www.patreon.com/onlinephpfunctions?ty=h">Patreon</a></li>
+                    </ul>
+                    
+                    
+                    <div id="searchInput">
+                    <form action="http://sandbox.onlinephpfunctions.com/search/" method="get">
+                        <input type="text" name="q" id="searchRight" value="Search" onclick="if(this.value==&#39;Search&#39;){this.value=&#39;&#39;;}" autocomplete="off">
+                    </form>
+                    <div id="searchResults">&nbsp;</div>                  
+                </div>
+                </div>
+                <div id="menuTopBottom">&nbsp;
+                </div>
+            </div>
+            <br>
+            <div id="contentWrapperMiddle">
+                    
+                
+                        <div id="content" style="min-height: 1113px;">
+    <div class="breadCrumbs">
+        <a href="http://onlinephpfunctions.com/">Home</a> - <a href="http://sandbox.onlinephpfunctions.com/">SandBox</a>
+    </div>
+
+    <h1>PHP Sandbox</h1>
+
+    <h2>Test your PHP code with this code tester</h2>
+    <p>
+        You can test your PHP code here on many php versions.
+    </p>
+    
+
+    <form data-persist="garlic" data-destroy="false" action="http://sandbox.onlinephpfunctions.com/" method="post" id="onlineFunction">
+
+
+        <br>
+        <b>Your script:</b><br>
+        <br>
+
+        <div id="aceeditor" style="height: 350px; width: 100%;" class=" ace_editor ace-chrome ace_focus"><textarea class="ace_text-input garlic-auto-save" wrap="off" autocorrect="off" autocapitalize="off" spellcheck="false" style="opacity: 0; height: 16px; width: 7.20125px; left: 124.013px; top: 176px;"></textarea><div class="ace_gutter"><div class="ace_layer ace_gutter-layer ace_folding-enabled" style="margin-top: 0px; height: 382px; width: 48px;"><div class="ace_gutter-cell " style="height: 16px;">1</div><div class="ace_gutter-cell " style="height: 16px;">2</div><div class="ace_gutter-cell " style="height: 16px;">3</div><div class="ace_gutter-cell " style="height: 16px;">4</div><div class="ace_gutter-cell " style="height: 16px;">5</div><div class="ace_gutter-cell " style="height: 16px;">6</div><div class="ace_gutter-cell " style="height: 16px;">7</div><div class="ace_gutter-cell " style="height: 16px;">8</div><div class="ace_gutter-cell " style="height: 16px;">9</div><div class="ace_gutter-cell " style="height: 16px;">10</div><div class="ace_gutter-cell " style="height: 16px;">11</div><div class="ace_gutter-cell " style="height: 16px;">12</div><div class="ace_gutter-cell " style="height: 16px;">13</div></div><div class="ace_gutter-active-line" style="top: 176px; height: 16px;"></div></div><div class="ace_scroller" style="left: 48px; right: 0px; bottom: 0px;"><div class="ace_content" style="margin-top: 0px; width: 752px; height: 382px; margin-left: 0px;"><div class="ace_layer ace_print-margin-layer"><div class="ace_print-margin" style="left: 580.1px; visibility: visible;"></div></div><div class="ace_layer ace_marker-layer"><div class="ace_active-line" style="height:16px;top:176px;left:0;right:0;"></div></div><div class="ace_layer ace_text-layer" style="padding: 0px 4px;"><div class="ace_line" style="height:16px"><span class="ace_support ace_php_tag">&lt;?php</span></div><div class="ace_line" style="height:16px"><span class="ace_indent-guide">    </span>    <span class="ace_comment">//Enter your code here, enjoy!</span></div><div class="ace_line" style="height:16px"></div><div class="ace_line" style="height:16px"><span class="ace_variable">$array</span> <span class="ace_keyword ace_operator">=</span> <span class="ace_keyword">array</span><span class="ace_paren ace_lparen">(</span><span class="ace_string">"1"</span> <span class="ace_keyword ace_operator">=&gt;</span> <span class="ace_string">"PHP code tester Sandbox Online"</span>,  </div><div class="ace_line" style="height:16px"><span class="ace_indent-guide">    </span><span class="ace_indent-guide">    </span><span class="ace_indent-guide">    </span>  <span class="ace_string">"foo"</span> <span class="ace_keyword ace_operator">=&gt;</span> <span class="ace_string">"bar"</span>, <span class="ace_constant ace_numeric">5</span> , <span class="ace_constant ace_numeric">5</span> <span class="ace_keyword ace_operator">=&gt;</span> <span class="ace_constant ace_numeric">89009</span>, </div><div class="ace_line" style="height:16px"><span class="ace_indent-guide">    </span><span class="ace_indent-guide">    </span><span class="ace_indent-guide">    </span>  <span class="ace_string">"case"</span> <span class="ace_keyword ace_operator">=&gt;</span> <span class="ace_string">"Random Stuff: "</span> . <span class="ace_support ace_function">rand</span><span class="ace_paren ace_lparen">(</span><span class="ace_constant ace_numeric">100</span>,<span class="ace_constant ace_numeric">999</span><span class="ace_paren ace_rparen">)</span>,</div><div class="ace_line" style="height:16px"><span class="ace_indent-guide">    </span><span class="ace_indent-guide">    </span><span class="ace_indent-guide">    </span>  <span class="ace_string">"PHP Version"</span> <span class="ace_keyword ace_operator">=&gt;</span> <span class="ace_support ace_function">phpversion</span><span class="ace_paren ace_lparen">(</span><span class="ace_paren ace_rparen">)</span></div><div class="ace_line" style="height:16px"><span class="ace_indent-guide">    </span><span class="ace_indent-guide">    </span><span class="ace_indent-guide">    </span>  <span class="ace_paren ace_rparen">)</span>;</div><div class="ace_line" style="height:16px"><span class="ace_indent-guide">    </span><span class="ace_indent-guide">    </span><span class="ace_indent-guide">    </span>  </div><div class="ace_line" style="height:16px"><span class="ace_variable">$new</span> <span class="ace_keyword ace_operator">=</span> <span class="ace_support ace_function">implode</span><span class="ace_paren ace_lparen">(</span><span class="ace_string">''</span>, <span class="ace_variable">$array</span><span class="ace_paren ace_rparen">)</span>;</div><div class="ace_line" style="height:16px"></div><div class="ace_line" style="height:16px"><span class="ace_support ace_function">echo</span> <span class="ace_variable">$new</span>;</div><div class="ace_line" style="height:16px"></div></div><div class="ace_layer ace_marker-layer"></div><div class="ace_layer ace_cursor-layer"><div class="ace_cursor" style="left: 76.0125px; top: 176px; width: 7.20125px; height: 16px; opacity: 0;"></div></div></div></div><div class="ace_scrollbar ace_scrollbar-v" style="display: none; width: 20px; bottom: 0px;"><div class="ace_scrollbar-inner" style="width: 20px; height: 208px;"></div></div><div class="ace_scrollbar ace_scrollbar-h" style="display: none; height: 20px; left: 48px; right: 0px;"><div class="ace_scrollbar-inner" style="height: 20px; width: 800px;"></div></div><div style="height: auto; width: auto; top: 0px; left: 0px; visibility: hidden; position: absolute; white-space: pre; font-style: inherit; font-variant: inherit; font-weight: inherit; font-stretch: inherit; font-size: inherit; line-height: inherit; font-family: inherit; overflow: hidden;"><div style="height: auto; width: auto; top: 0px; left: 0px; visibility: hidden; position: absolute; white-space: pre; font-style: inherit; font-variant: inherit; font-weight: inherit; font-stretch: inherit; font-size: inherit; line-height: inherit; font-family: inherit; overflow: visible;"></div><div style="height: auto; width: auto; top: 0px; left: 0px; visibility: hidden; position: absolute; white-space: pre; font-style: inherit; font-variant: inherit; font-stretch: inherit; font-size: inherit; line-height: inherit; font-family: inherit; overflow: visible;">XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX</div></div></div>
+        <textarea name="code" cols="95" rows="24" class="hidden garlic-auto-save" id="lined" style="width: 100%; display: none;">&lt;?php
+        //Enter your code here, enjoy!
+
+$array = array("1" =&gt; "PHP code tester Sandbox Online",  
+              "foo" =&gt; "bar", 5 , 5 =&gt; 89009, 
+              "case" =&gt; "Random Stuff: " . rand(100,999),
+              "PHP Version" =&gt; phpversion()
+              );
+              
+foreach( $array as $key =&gt; $value ){
+    echo $key."\t=&gt;\t".$value."\n";
+}
+
+</textarea><br>
+     
+        <table><tbody><tr><td>
+                    <b>Run on PHP version:</b></td><td>
+                    <select name="phpVersion" class="garlic-auto-save">
+<option value="7_0_5">7.0.5</option>
+<option value="7_0_4">7.0.4</option>
+<option selected="selected" value="7_0_3">7.0.3</option>
+<option value="7_0_2">7.0.2</option>
+<option value="7_0_1">7.0.1</option>
+<option value="5_6_20">5.6.20</option>
+<option value="5_6_19">5.6.19</option>
+<option value="5_6_18">5.6.18</option>
+<option value="5_6_17">5.6.17</option>
+<option value="5_6_2">5.6.2</option>
+<option value="5_5_34">5.5.34</option>
+<option value="5_5_33">5.5.33</option>
+<option value="5_5_32">5.5.32</option>
+<option value="5_5_31">5.5.31</option>
+<option value="5_5_18">5.5.18</option>
+<option value="5_5_5">5.5.5</option>
+<option value="5_5_0_a6">5.5.0.a6</option>
+<option value="5_5_0_a_5">5.5.0.a.5</option>
+<option value="5_5_0_a_2">5.5.0.a.2</option>
+<option value="5_4_34">5.4.34</option>
+<option value="5_4_21">5.4.21</option>
+<option value="5_4_13">5.4.13</option>
+<option value="5_4_12">5.4.12</option>
+<option value="5_4_11">5.4.11</option>
+<option value="5_4_10">5.4.10</option>
+<option value="5_4_9">5.4.9</option>
+<option value="5_4_8">5.4.8</option>
+<option value="5_4_7">5.4.7</option>
+<option value="5_4_6">5.4.6</option>
+<option value="5_4_5">5.4.5</option>
+<option value="5_4_4">5.4.4</option>
+<option value="5_4_3">5.4.3</option>
+<option value="5_4_2">5.4.2</option>
+<option value="5_4_1">5.4.1</option>
+<option value="5_4_0">5.4.0</option>
+<option value="5_3_29">5.3.29</option>
+<option value="5_3_27">5.3.27</option>
+<option value="5_3_23">5.3.23</option>
+<option value="5_3_22">5.3.22</option>
+<option value="5_3_21">5.3.21</option>
+<option value="5_3_20">5.3.20</option>
+<option value="5_3_19">5.3.19</option>
+<option value="5_3_18">5.3.18</option>
+<option value="5_3_17">5.3.17</option>
+<option value="5_3_16">5.3.16</option>
+<option value="5_3_15">5.3.15</option>
+<option value="5_3_14">5.3.14</option>
+<option value="5_3_13">5.3.13</option>
+<option value="5_3_12">5.3.12</option>
+<option value="5_3_11">5.3.11</option>
+<option value="5_3_10">5.3.10</option>
+<option value="5_3_2">5.3.2</option>
+<option value="5_3_1">5.3.1</option>
+<option value="5_3_0">5.3.0</option>
+<option value="5_2_17">5.2.17</option>
+<option value="5_2_16">5.2.16</option>
+<option value="5_1_6">5.1.6</option>
+<option value="5_1_5">5.1.5</option>
+<option value="5_0_5">5.0.5</option>
+<option value="5_0_4">5.0.4</option>
+<option value="4_4_9">4.4.9</option>
+                    </select></td></tr><tr><td><b>Output:</b></td><td>
+                    <select name="output" class="garlic-auto-save">
+                        <option>Textbox</option>
+                        <option>Raw</option>                        
+                    </select>
+                </td></tr></tbody></table>
+        <br><br>
+
+        <input type="submit" value="Execute code" class="garlic-auto-save"> <input type="button" id="saveCode" value=" Save or share your code " onclick=" " class="garlic-auto-save">
+        <input type="hidden" name="ajaxResult" value="0">
+
+    </form> 
+
+    <div id="ajaxResult">
+    </div>
+
+
+
+    <br><br>
+
+    <h3>Notes</h3>
+
+    This script works with a whitelist of functions. All functions that do not require disk, system or network access are whitelisted, others blacklisted. Max execution time is set to 3 seconds.<br><br>
+    If you find a disabled function that should be whitelisted or if you run into other problems, please leave a comment
+
+    <div class="clear">&nbsp;</div>
+    <br>
+    
+
+   <div class="hr">&nbsp;</div>
+    <br>
+    <script type="text/javascript"><!--
+google_ad_client = "ca-pub-2737349188443749";
+/* Center */
+google_ad_slot = "2167635418";
+google_ad_width = 728;
+google_ad_height = 90;
+//-->
+</script>
+<script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script>    <div class="hr">&nbsp;</div>
+    <br><br>
+
+
+    <div id="comments">
+        <h3>Comments</h3>
+<div id="disqus_thread"><iframe id="dsq-app2" name="dsq-app2" allowtransparency="true" frameborder="0" scrolling="no" tabindex="0" title="Disqus" width="100%" src="./PHP Sandbox, test PHP online, PHP tester_files/saved_resource.html" style="width: 1px !important; min-width: 100% !important; border: none !important; overflow: hidden !important; height: 4472px !important;" horizontalscrolling="no" verticalscrolling="no"></iframe><iframe id="indicator-north" name="indicator-north" allowtransparency="true" frameborder="0" scrolling="no" tabindex="0" title="Disqus" style="width: 800px !important; border: none !important; overflow: hidden !important; top: 0px !important; min-width: 800px !important; max-width: 800px !important; position: fixed !important; z-index: 2147483646 !important; height: 29px !important; min-height: 29px !important; max-height: 29px !important; display: none !important;" src="./PHP Sandbox, test PHP online, PHP tester_files/saved_resource(1).html"></iframe><iframe id="indicator-south" name="indicator-south" allowtransparency="true" frameborder="0" scrolling="no" tabindex="0" title="Disqus" style="width: 800px !important; border: none !important; overflow: hidden !important; bottom: 0px !important; min-width: 800px !important; max-width: 800px !important; position: fixed !important; z-index: 2147483646 !important; height: 29px !important; min-height: 29px !important; max-height: 29px !important; display: none !important;" src="./PHP Sandbox, test PHP online, PHP tester_files/saved_resource(2).html"></iframe></div>
+<script>
+     var disqus_config = function () {
+     this.page.url = "http://sandbox.onlinephpfunctions.com/";
+     this.page.identifier = "sandbox";
+     };
+
+    (function() {
+        var d = document, s = d.createElement('script');
+        s.src = '//onlinephpfunctions.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the &lt;a href="https://disqus.com/?ref_noscript" rel="nofollow"&gt;comments powered by Disqus.&lt;/a&gt;</noscript>
+    </div>
+
+
+
+</div>
+
+</div>
+
+<div id="menu"> 
+
+        
+    <div id="sponsorWrap">
+        <br>
+         <script type="text/javascript"><!--
+google_ad_client = "ca-pub-2737349188443749";
+/* leftTop */
+google_ad_slot = "1249305412";
+google_ad_width = 250;
+google_ad_height = 250;
+//-->
+</script>
+<script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script>        <br><br>
+    </div>
+
+    <div class="navMenu">
+        <h3>Navigation</h3>
+        <ul>
+            <li><a href="http://onlinephpfunctions.com/">Home</a></li>
+            <li class="selected"><a href="http://sandbox.onlinephpfunctions.com/">PHP Sandbox</a></li>
+            <li><a href="http://onlinephpfunctions.com/categories/Arrays">Arrays</a></li><li><a href="http://onlinephpfunctions.com/categories/Custom+functions">Custom functions</a></li><li><a href="http://onlinephpfunctions.com/categories/Cryptography%2C+Hashing+">Cryptography, Hashing </a></li><li><a href="http://onlinephpfunctions.com/categories/Date+and+Time">Date and Time</a></li><li><a href="http://onlinephpfunctions.com/categories/Math">Math</a></li><li><a href="http://onlinephpfunctions.com/categories/Step+by+step+tutorials">Step by step tutorials</a></li><li><a href="http://onlinephpfunctions.com/categories/Other+functions">Other functions</a></li><li><a href="http://onlinephpfunctions.com/categories/Output+buffering">Output buffering</a></li><li><a href="http://onlinephpfunctions.com/categories/Regular+Expressions">Regular Expressions</a></li><li><a href="http://onlinephpfunctions.com/categories/String+Manipulation">String Manipulation</a></li><li><a href="http://onlinephpfunctions.com/categories/String+Compare+%2F+Search">String Compare / Search</a></li><li><a href="http://onlinephpfunctions.com/categories/Type+checking+%2F+changing">Type checking / changing</a></li><li><a href="http://onlinephpfunctions.com/categories/Uncategorized">Uncategorized</a></li>        </ul>
+    </div>
+
+
+    <div class="navMenu">
+
+
+
+        <h3>Similar functions</h3>
+        <ul>
+            <li><a title="ob_get_length" href="http://ob_get_length.onlinephpfunctions.com/">ob_get_length</a></li>
+        <li><a title="preg_grep" href="http://preg_grep.onlinephpfunctions.com/">preg_grep</a></li>
+        <li><a title="is_null" href="http://is_null.onlinephpfunctions.com/">is_null</a></li>
+        <li><a title="setlocale" href="http://setlocale.onlinephpfunctions.com/">setlocale</a></li>
+        <li><a title="date_create" href="http://date_create.onlinephpfunctions.com/">date_create</a></li>
+        <li><a title="date_timezone_get" href="http://date_timezone_get.onlinephpfunctions.com/">date_timezone_get</a></li>
+        <li><a title="array_keys" href="http://array_keys.onlinephpfunctions.com/">array_keys</a></li>
+        <li><a title="strstr" href="http://strstr.onlinephpfunctions.com/">strstr</a></li>
+        <li><a title="array_search" href="http://array_search.onlinephpfunctions.com/">array_search</a></li>
+        <li><a title="date_default_timezone_set" href="http://date_default_timezone_set.onlinephpfunctions.com/">date_default_timezone_set</a></li>
+                </ul></div>
+
+    <div class="navMenu">
+
+        <h3>Most Used</h3>
+        <ul>
+                                <li><a href="http://sandbox.onlinephpfunctions.com/">sandbox</a>
+                        (7942606)</li>
+                        <li><a href="http://preg_replace.onlinephpfunctions.com/">preg_replace</a>
+                        (84598)</li>
+                        <li><a href="http://preg_match.onlinephpfunctions.com/">preg_match</a>
+                        (61562)</li>
+                        <li><a href="http://str_replace.onlinephpfunctions.com/">str_replace</a>
+                        (35068)</li>
+                        <li><a href="http://serialize.onlinephpfunctions.com/">serialize</a>
+                        (33655)</li>
+                        <li><a href="http://unserialize.onlinephpfunctions.com/">unserialize</a>
+                        (28389)</li>
+                        <li><a href="http://json_encode.onlinephpfunctions.com/">json_encode</a>
+                        (21680)</li>
+                        <li><a href="http://json_decode.onlinephpfunctions.com/">json_decode</a>
+                        (21097)</li>
+                        <li><a href="http://strtotime.onlinephpfunctions.com/">strtotime</a>
+                        (16123)</li>
+            </ul>
+
+        <br>
+    </div>
+
+
+
+
+</div>
+                    
+              
+                <div class="clear">&nbsp;</div>
+        </div>
+
+<div id="contentWrapperBottom">&nbsp;</div>
+
+
+            &nbsp; &nbsp; &nbsp; © 2016 OnlinePHPFunctions.com  |
+            <a href="http://onlinephpfunctions.com/disclaimer">Disclaimer</a> |
+             &nbsp; &nbsp; &nbsp;  PHP versions: 7.0.5, 7.0.4, 7.0.3, 7.0.2, 7.0.1, 5.6.20, 5.6.19, 5.6.18, 5.6.17, 5.6.2, 5.5.34, 5.5.33, 5.5.32, 5.5.31, 5.5.18, 5.5.5, 5.5.0.a6, 5.5.0.a.5, 5.5.0.a.2, 5.4.34, 5.4.21, 5.4.13, 5.4.12, 5.4.11, 5.4.10, 5.4.9, 5.4.8, 5.4.7, 5.4.6, 5.4.5, 5.4.4, 5.4.3, 5.4.2, 5.4.1, 5.4.0, 5.3.29, 5.3.27, 5.3.23, 5.3.22, 5.3.21, 5.3.20, 5.3.19, 5.3.18, 5.3.17, 5.3.16, 5.3.15, 5.3.14, 5.3.13, 5.3.12, 5.3.11, 5.3.10, 5.3.2, 5.3.1, 5.3.0, 5.2.17, 5.2.16, 5.1.6, 5.1.5, 5.0.5, 5.0.4, 4.4.9
+
+            <br><br>
+
+            
+
+        <br>
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-30655681-1']);
+  _gaq.push(['_setDomainName', 'onlinephpfunctions.com']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+        
+    
+
+ <!-- 0.0045299530029297 --><iframe name="oauth2relay235106486" id="oauth2relay235106486" src="./PHP Sandbox, test PHP online, PHP tester_files/postmessageRelay.html" tabindex="-1" style="width: 1px; height: 1px; position: absolute; top: -100px;"></iframe></body></html>

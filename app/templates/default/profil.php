@@ -1,5 +1,11 @@
 <?php $this->layout('layout', ['title' => 'Accueil']) ?>
 
+<?php $this->start('css') ?>
+
+	<link rel="stylesheet" href="<?= $this->assetUrl('/css/style.css') ?>">
+
+<?php $this->stop('css') ?>
+
 <?php $this->start('main_content') ?>
 <h2>Prenom Nom</h2>
 
