@@ -519,6 +519,70 @@
 	},
 	"buffers":
 	[
+		{
+			"file": "app/routes.php",
+			"settings":
+			{
+				"buffer_size": 600,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/templates/default/home.php",
+			"settings":
+			{
+				"buffer_size": 32211,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/Controller/SportController.php",
+			"settings":
+			{
+				"buffer_size": 257,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/templates/sports/sport_list.php",
+			"settings":
+			{
+				"buffer_size": 17779,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/templates/sports/sport_detail.php",
+			"settings":
+			{
+				"buffer_size": 610,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/templates/layout.php",
+			"settings":
+			{
+				"buffer_size": 2156,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/Manager/UserManager.php",
+			"settings":
+			{
+				"buffer_size": 77,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/templates/partials/nav.php",
+			"settings":
+			{
+				"buffer_size": 1944,
+				"line_ending": "Unix"
+			}
+		}
 	],
 	"build_system": "",
 	"build_system_choices":
@@ -567,8 +631,26 @@
 		"side_bar_visible": false,
 		"status_bar_visible": false
 	},
+	"expanded_folders":
+	[
+		"/Users/abellocabic/Sites/onsport",
+		"/Users/abellocabic/Sites/onsport/app",
+		"/Users/abellocabic/Sites/onsport/app/Controller",
+		"/Users/abellocabic/Sites/onsport/app/Manager",
+		"/Users/abellocabic/Sites/onsport/app/templates",
+		"/Users/abellocabic/Sites/onsport/app/templates/default",
+		"/Users/abellocabic/Sites/onsport/app/templates/partials",
+		"/Users/abellocabic/Sites/onsport/app/templates/sports",
+		"/Users/abellocabic/Sites/onsport/public",
+		"/Users/abellocabic/Sites/onsport/public/assets",
+		"/Users/abellocabic/Sites/onsport/public/assets/font-awesome",
+		"/Users/abellocabic/Sites/onsport/public/assets/img"
+	],
 	"file_history":
 	[
+		"/Users/abellocabic/Sites/onsport/app/Controller/DefaultController.php",
+		"/Users/abellocabic/Sites/onsport/app/templates/sports/sport_detail.php",
+		"/Users/abellocabic/Sites/onsport/app/templates/default/home.php",
 		"/Users/abellocabic/Sites/sports/sportswithme/.gitignore",
 		"/Users/abellocabic/Sites/sports/sportswithme/app/Manager/UserManager.php",
 		"/Users/abellocabic/Sites/sports/sportswithme/app/config.php",
@@ -693,10 +775,7 @@
 		"/Applications/MAMP/htdocs/39 - A&A/mailerEx.php",
 		"/Applications/MAMP/htdocs/39 - A&A/readme.txt",
 		"/Applications/MAMP/htdocs/39 - PHP Admin Exo/css/general.css",
-		"/Applications/MAMP/htdocs/39 - PHP Admin Exo/sources/membres.fix",
-		"/Applications/MAMP/htdocs/39 - PHP Admin Exo/correction.php",
-		"/Applications/MAMP/htdocs/39 - PHP Admin Exo/index.php",
-		"/Users/abellocabic/Coding/03 - Web Force 3/Front End - Adriana BELLO/31 - 160325 - Exercice Integration/js/main.js"
+		"/Applications/MAMP/htdocs/39 - PHP Admin Exo/sources/membres.fix"
 	],
 	"find":
 	{
@@ -753,8 +832,240 @@
 	"groups":
 	[
 		{
+			"selected": 6,
 			"sheets":
 			[
+				{
+					"buffer": 0,
+					"file": "app/routes.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 600,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								592,
+								592
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "app/templates/default/home.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 32211,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								897,
+								897
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 709.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 7,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "app/Controller/SportController.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 257,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								174,
+								174
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "app/templates/sports/sport_list.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 17779,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								17779
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 7809.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "app/templates/sports/sport_detail.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 610,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								85,
+								85
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "app/templates/layout.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2156,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1438,
+								1438
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 417.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "app/Manager/UserManager.php",
+					"semi_transient": true,
+					"settings":
+					{
+						"buffer_size": 77,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								77,
+								77
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "app/templates/partials/nav.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1944,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1131,
+								1131
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 80.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 6,
+					"type": "text"
+				}
 			]
 		}
 	],
@@ -839,7 +1150,7 @@
 	"show_open_files": true,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 366.0,
+	"side_bar_width": 309.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{

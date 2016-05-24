@@ -19,7 +19,7 @@
                         <a href="#page-top"></a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="/home">Home</a>
+                        <a class="page-scroll" href="/">Home</a>
                     </li>
                     <li>
                         <a class="page-scroll" href="/sports">Les Sports</a>

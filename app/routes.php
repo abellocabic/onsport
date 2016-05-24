@@ -10,4 +10,8 @@ $w_routes = array(
 	['GET|POST', '/oubli', 'Default#oubli', 'oubli'],
 	['GET|POST', '/envoiMessage', 'Default#envoiMessage', 'envoiMessage'],
 
+	//Adriana
+	['GET|POST', '/sports', 'Sport#sport_list', 'sport_list'],
+	['GET|POST', '/sports/[:sport]', 'Sport#sport_detail', 'sport_detail'],
+
 	);
