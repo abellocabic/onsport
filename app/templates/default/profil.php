@@ -18,10 +18,10 @@
 		<div id="butcont2">
 			<button id="messageProfil">Messages</button>
 			<button>Mes amis</button>
-			<button>Modifier mon profil</button>
+			<a href="profilPerso"><button>Modifier mon profil</button></a>
 		</div>
 		<div id="butMessage2">
-			<button>Boite de Reception</button>
+			<a href="reception"><button>Boite de Reception</button></a>
 			<a href="envoiMessage"><button>Envoyer un message</button></a> 
 		</div>
 		<article id="artcont2">presentation : Blablabla Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
