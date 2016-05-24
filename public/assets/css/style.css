@@ -6,6 +6,9 @@
 	background-color: #F8BFBF;
 	margin-top: 5px;
 }
+li{
+	list-style: none;
+}
 #bonjour{
 	color: #fff;
 	font-weight: bolder;
@@ -31,9 +34,7 @@
 #btnInscrire{
 	height: 35px;
 }
-form input, form select{
-	color: #000;
-}
+
 
 /*-----------------------------home*/
 
@@ -141,4 +142,78 @@ form input, form select{
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+}
+/*----------------------------reception*/
+#containeurReception{
+	display: flex;	
+	border: 1px solid #ccc;
+	padding: 0.5%;
+}
+#receptionh1{
+	text-align: center;
+}
+#listeMessage{
+	display: flex;
+	flex-direction: column;
+	width: 18%;
+	
+	border: 1px solid #ccc;
+}
+#afficheMessage{
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	align-items: flex-end;
+	width: 75%;
+	padding: 1%;
+	border: 1px solid #ccc;
+	margin-left: 3%;
+
+}
+#afficheMessage div{
+	width: 65%;
+	padding: 1%;
+	display: flex;
+	align-self: flex-start;
+	border-color: black;
+	background-color: palegreen;
+	border-style: solid;
+	border-radius: 40px 40px 40px 40px;
+	margin-bottom: 1%;
+
+}
+#afficheMessage article{
+	width: 65%;
+	padding: 1%;
+	border-color: black;
+	background-color: #53C8F4;
+	border-style: solid;
+	border-radius: 40px 40px 40px 40px;
+	margin-bottom: 1%;
+}
+#afficheMessage>form{
+	display: flex;
+	justify-content: flex-end;
+	align-items: flex-end;
+	width: 100%;
+}
+#sendMessageId{
+	display: flex;
+	flex: 1;
+}
+#butForm{
+	margin-left: 1%;
+}
+/*-------------------------------------ProfilPErso*/
+.container{
+	border: 1px solid #ccc;
+}
+#containerLiProfilPerso{
+	display: flex;
+}
+.modifProfil + input{
+	display: none;
+}
+.labelPerso:hover{
+	cursor: pointer;
 }

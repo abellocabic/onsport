@@ -2,10 +2,13 @@
 
 namespace Controller;
 
+
+
 use \W\Controller\Controller;
 
 use \W\Security\AuthentificationManager;
 use \W\Manager\UserManager;
+
 
 class DefaultController extends Controller
 {
@@ -154,20 +157,25 @@ class DefaultController extends Controller
 		$this->show('Default/oubli');
 	}
 
+
+
 	public function envoiMessage(){
-		$am = new UserManager();
+		$um = new UserManager();
 		$errors = [];
 		$data = [];
 
 		if (isset($_POST['btnEnvoiMessage'])) {
 			if (!empty($_POST['destinataire']) && !empty($_POST['messageAEnvoyer'])) {
 				$user = $_SESSION['user']['id'];
-				$destinataire = $am->getUserByUsernameOrEmail($_POST['destinataire']);
+				$destinataire = $um->getUserByUsernameOrEmail($_POST['destinataire']);
 				$destinataire = $destinataire['id'];
 				$message = $_POST['messageAEnvoyer'];
 				$date = date("Y-m-d H:i:s");	
-				$data = [$user, $message, $destinataire, $date];
-				print_r($data);
+				$data = ['id_user' => $user, 'message' => $message, 'id_partenaire' => $destinataire, 'date' => $date];
+				$am->setTable('messages');
+				$am->insert($data);
+				
+
 
 				
 				
@@ -177,5 +185,82 @@ class DefaultController extends Controller
 			}			
 		}
 		$this->show('Default/envoiMessage', ['errors' => $errors, 'data' => $data]);
+	}
+
+	public function reception(){
+		
+		$m = new \Manager\MessageManager(); //
+
+		$resultat = $m->testy();
+		
+
+		$this->show('Default/reception', ['resultat' => $resultat]);
+	}
+
+	public function profilPerso(){
+		$um = new UserManager();
+
+		$tab = $um->find($_SESSION['user']['id']);
+		
+		$data = [];
+		$username = '';
+		$prenom = '';
+		$name = '';
+		$email = '';
+		$ville = '';
+		$cp = '';
+
+
+		if (isset($_POST['btnModifProfil'])) {
+			if (empty($_POST['usernameU'])) {
+				$username = $_SESSION['user']['username'];
+			}else{
+				$username = $_POST['usernameU'];
+			}
+			if (empty($_POST['prenomU'])) {
+				$prenom = $_SESSION['user']['prenom'];
+			}else{
+				$prenom = $_POST['prenomU'];
+			}
+			if (empty($_POST['nameU'])) {
+				$nom = $_SESSION['user']['nom'];
+			}else{
+				$nom = $_POST['nom'];
+			}
+			if (empty($_POST['emailU'])) {
+				$email = $_SESSION['user']['email'];
+			}else{
+				$email = $_POST['emailU'];
+			}
+			if (empty($_POST['villeU'])) {
+				$ville = $_SESSION['user']['ville'];
+			}else{
+				$ville = $_POST['villeU'];
+			}
+			if (empty($_POST['cpU'])) {
+				$cp = $_SESSION['user']['cp'];
+			}else{
+				$cp = $_POST['cpU'];
+			}
+		}
+
+		$data = 
+		['username' => $username, 
+		'email' => $email,
+		'nom' => $name,
+		'prenom' => $prenom,
+		'ville' => $ville,
+		'cp' => $cp
+		];
+
+		$um->update($data, $_SESSION['user']['id']);
+
+
+
+
+		$this->show('Default/profilPerso', ['tab' => $tab]);
+
+
+
 	}
 }
