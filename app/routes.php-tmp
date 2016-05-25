@@ -15,9 +15,8 @@ $w_routes = array(
 	['GET|POST', '/messages', 'Message#messages', 'messages'],
 	//['GET|POST', '/messages/[:id]/[:pid]', 'Message#messages', 'messages'],
 
-
 	//Adriana
 	['GET|POST', '/sports', 'Sport#sport_list', 'sport_list'],
 	['GET|POST', '/sports/[a:sport]', 'Sport#sport_detail', 'sport_detail'],
 
-	);
+);

@@ -1,0 +1,18 @@
+<?php
+
+namespace Controller;
+
+use \Manager\MessageManager;
+use \W\Controller\Controller;
+
+class MessageController extends Controller {
+	public function messages() {
+		$id       = $_POST['uid'];
+		$pid      = $_POST['pid'];
+		$m        = new MessageManager();
+		$messages = $m->findAllById($id, $pid);
+		//$this->showJson($messages);
+		$this->show('default/messages', ['messages' => $messages]);
+	}
+
+}

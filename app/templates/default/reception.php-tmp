@@ -1,27 +1,24 @@
-<?php $this->layout('layout', ['title' => 'Accueil']) ?>
+<?php $this->layout('layout', ['title' => 'Accueil'])?>
 
-<?php $this->start('css') ?>
+<?php $this->start('css')?>
 
-<link rel="stylesheet" href="<?= $this->assetUrl('/css/style.css') ?>">
+<link rel="stylesheet" href="<?=$this->assetUrl('/css/style.css')?>">
 
-<?php $this->stop('css') ?>
+<?php $this->stop('css')?>
 
-<?php $this->start('main_content') ?>
-
-
-
+<?php $this->start('main_content')?>
 <h1 id="receptionh1">Mes Messages</h1>
 <div class="container" id="containeurReception">
 	<div id="listeMessage">
-		<?php foreach($resultat as $value) : ?>
-			<a class="chat" href="#" data-uid="<?= $value['id_user'] ?>" data-pid="<?= $value['id_partenaire'] ?>"><li><?=  $value['id_partenaire']?></li></a> 
-		<?php endforeach; ?>
-	</div>
-	
+<?php foreach ($resultat as $value):?>
+			<a class="chat" href="#" data-uid="<?=$value['id_user']?>" data-pid="<?=$value['id_partenaire']?>"><li><?=$value['id_partenaire']?></li></a>
+<?php endforeach;?>
+</div>
+
 	<div id="afficheMessage">
 
 		<div id="affMessage">
-			
+
 		</div>
 
 		<form action="#" method="POST" class="pure-form pure-form-aligned">
@@ -35,12 +32,12 @@
 
 </div>
 <pre>
-	<?php //print_r($resultat); ?>
+<?php //print_r($resultat); ?>
 </pre>
 
-<?php $this->stop('main_content') ?>
+<?php $this->stop('main_content')?>
 
-<?php $this->start('javascripts') ?>
+<?php $this->start('javascripts')?>
 <script>
 //on fait un apel ajax quand le doc est chargé
 $('.chat').on('click', function() {
@@ -60,4 +57,4 @@ $('.chat').on('click', function() {
 });
 
 </script>
-<?php $this->stop('javascripts') ?>
+<?php $this->stop('javascripts')?>

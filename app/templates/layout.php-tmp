@@ -10,16 +10,16 @@
 	<meta name="description" content="">
 	<meta name="author" content="">
 
-	<title><?= $this->e($title) ?></title>
+	<title><?=$this->e($title)?></title>
 
 	<!-- Bootstrap Core CSS -->
-	<link href="<?= $this->assetUrl('css/bootstrap.min.css') ?>" rel="stylesheet">
+	<link href="<?=$this->assetUrl('css/bootstrap.min.css')?>" rel="stylesheet">
 
 	<!-- Agency CSS -->
-	<link href="<?= $this->assetUrl('css/agency.css') ?>" rel="stylesheet">
+	<link href="<?=$this->assetUrl('css/agency.css')?>" rel="stylesheet">
 
 	<!-- Custom Fonts -->
-	<link href="<?= $this->assetUrl('font-awesome/css/font-awesome.min.css') ?>" rel="stylesheet" type="text/css">
+	<link href="<?=$this->assetUrl('font-awesome/css/font-awesome.min.css')?>" rel="stylesheet" type="text/css">
 	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
 	<link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
 	<link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
@@ -29,10 +29,8 @@
 	<link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/pure-min.css">
 
 	<!-- CUSTOM CSS  -->
-	<?= $this->section('css') ?>
-
-
-	<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<?=$this->section('css')?>
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
 	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
@@ -41,15 +39,13 @@
     </head>
     <body>
 
-    	<?= $this->section('nav') ?>
-    	
-
-    	<section>
-    		<?= $this->section('main_content') ?>
+<?=$this->section('nav')?>
+<section>
+<?=$this->section('main_content')?>
     	</section>
     	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
     	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.3/jquery.min.js"></script>
-    	<script src="<?= $this->assetUrl('js/index.js') ?>"></script>
-    	<?= $this->section('javascripts') ?>
+    	<script src="<?=$this->assetUrl('js/index.js')?>"></script>
+<?=$this->section('javascripts')?>
     </body>
     </html>
